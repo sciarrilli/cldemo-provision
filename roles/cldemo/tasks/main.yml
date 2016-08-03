@@ -32,8 +32,8 @@
 - name: install paramiko version 1.16
   command: pip install paramiko==1.16
 
-#- name: run apt-get update
-#  apt: update_cache=yes
+- name: run apt-get update
+  apt: update_cache=yes
 
 - name: install cldemo base packages 1
   apt: name={{ item }}
